@@ -1,0 +1,33 @@
+## Front
+
+# Compiled output
+/front/who-are-ya/dist
+/front/who-are-ya/tmp
+/front/who-are-ya/out-tsc
+/front/who-are-ya/bazel-out
+
+# Node
+/front/who-are-ya/node_modules
+/front/who-are-ya/npm-debug.log
+/front/who-are-ya/yarn-error.log
+
+## IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+.editorconfig
+
+# Visual Studio Code
+/front/who-are-ya/.vscode
+
+# Miscellaneous
+/front/who-are-ya/.angular/cache
+
+## Back
+
+# Players database (created if non existent)
+/back/who-are-ya/players.db
