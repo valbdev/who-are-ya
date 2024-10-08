@@ -1,6 +1,6 @@
 # Who Are Ya - Women's Football quizz game 
 
-This project is an attempt to replicate  the footballer guessing game 'Who Are Ya?' (https://playfootball.games/who-are-ya/) for Women's football, while showing how Docker can be a solution for implementing a simple client-server architecture.
+This project is an attempt to replicate  the footballer guessing game 'Who Are Ya?' (https://playfootball.games/who-are-ya/) for Women's football, while showing how Docker can be a solution for simple client-server architecture implementation.
 
 ![Screenshot of app exemple](.img/screenshot.png)
 
