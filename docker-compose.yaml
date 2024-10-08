@@ -1,0 +1,15 @@
+services:
+  back:
+    build:
+      context: ./back
+      dockerfile: fastapi.dockerfile
+    ports:
+      - "8000:8000"
+  front: 
+    build:
+      context: ./front/who-are-ya
+      dockerfile: angular.dockerfile
+    depends_on:
+      - back
+    ports:
+      - "4200:80"
