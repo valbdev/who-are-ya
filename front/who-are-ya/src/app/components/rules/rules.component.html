@@ -1,0 +1,42 @@
+<h1 mat-dialog-title>{{data.title}}</h1>
+<div mat-dialog-content>
+  <p>{{data.content_1}}</p>
+  <p>{{data.content_2}}</p>
+  <p>{{data.content_3}}</p>
+</div>
+<div mat-dialog-content>
+  <table id="table">
+    <tr>
+      <td id="player-name" colspan="5">
+        {{data.player.name?.toUpperCase()}}
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button class="neutral circle" mat-fab color="primary">
+          <img style="border-radius: 60%" src="{{data.player.flag}}" width="40px" height="40px">
+        </button>
+      </td>
+      <td>
+        <button class="good-guess circle" mat-fab color="primary">
+          <img style="border-radius: 60%" src="../../../assets/logos/logo-{{data.player.lid}}.svg" width="40px" height="40px">
+        </button>
+      </td>
+      <td>
+        <button class="good-guess circle squad" mat-fab color="primary">{{data.player.squad}}</button>
+      </td>
+      <td>
+        <button class="neutral circle pos" mat-fab color="primary">{{data.player.pos}}</button>
+      </td>
+      <td>
+        <button class="neutral circle born" mat-fab color="primary">{{data.player.born + "↓"}}</button>
+      </td>
+    </tr>
+  </table>
+</div>
+<div mat-dialog-content>
+  <p>{{data.content_4}}</p>
+</div>
+<div mat-dialog-actions>
+  <button style="margin: auto;" mat-button (click)="onClose()" color="primary">Close</button>
+</div>

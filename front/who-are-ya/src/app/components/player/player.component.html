@@ -1,0 +1,24 @@
+<div class="player-name">{{selectedPlayer.name?.toUpperCase()}}</div>
+<div>
+  <tr>
+    <td>
+    <button class="{{nationButtonColor()}} circle" mat-fab color="primary">
+      <img style="border-radius: 60%" src="{{selectedPlayer.flag}}" width="50px" height="50px">
+    </button>
+    </td>
+    <td>
+      <button class="{{leagueButtonColor()}} circle" mat-fab color="primary">
+        <img style="border-radius: 60%" src="../../../assets/logos/logo-{{selectedPlayer.lid}}.svg" width="50px" height="50px">
+      </button>
+    </td>
+    <td>
+      <button class="{{squadButtonColor()}} circle" mat-fab color="primary">{{selectedPlayer.squad}}</button>
+    </td>
+    <td>
+      <button class="{{posButtonColor()}} circle pos" mat-fab color="primary">{{selectedPlayer.pos}}</button>
+    </td>
+    <td>
+      <button class="{{bornButtonColor()}} circle born" mat-fab color="primary">{{selectedPlayer.born + " " + arrowUpOrDown()}}</button>
+    </td>
+  </tr>
+</div>

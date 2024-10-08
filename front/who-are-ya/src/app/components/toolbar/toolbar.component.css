@@ -1,0 +1,16 @@
+#logo {
+  margin-right: 15px;
+}
+
+.title {
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+.subtitle {
+  font-weight: 300;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}

@@ -1,0 +1,38 @@
+#player-name {
+  font-weight: bold;
+  text-align: center;
+  font-size: small;
+}
+
+#table {
+  width: 40%;
+  margin: auto;
+}
+
+.circle {
+  height: 60px;
+  width: 60px;
+  margin: 5px;
+  vertical-align: middle;
+  font-size: medium;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.neutral {
+  background-color: lightslategray;
+}
+
+.good-guess {
+  background-color: limegreen;
+}
+
+.pos, .born, .squad {
+  font-size: smaller;
+}
+
+.td {
+  vertical-align: middle;
+}
+
+

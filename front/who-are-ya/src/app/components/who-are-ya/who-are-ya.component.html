@@ -1,0 +1,35 @@
+<mat-grid-list cols="1" rowHeight="60px">
+  <mat-grid-tile>
+    <span id="catch-phrase">Try and guess the player !</span>
+  </mat-grid-tile>
+  <mat-grid-tile *ngIf="!isStarted">
+    <div style="text-align: center">
+      <button class="vertical-center" mat-raised-button color="primary" (click)="startGame()">Start a game</button>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile *ngIf="isStarted">
+    <span>Remaining attempts : {{remainingTries}}/8</span>
+  </mat-grid-tile>
+</mat-grid-list>
+<mat-grid-list cols="1" rowHeight="80px">
+  <mat-grid-tile *ngIf="isStarted">
+    <form>
+      <mat-form-field style="width: 500px">
+        <mat-label>Player guess</mat-label>
+        <input matInput [matAutocomplete]="auto" [formControl]="playerControl" width="500px">
+        <mat-autocomplete #auto="matAutocomplete" panelWidth="500px">
+          <mat-option *ngFor="let player of players" [value]="player.name" (onSelectionChange)="onSelectPlayer(player)">
+            {{player.name + " (" + player.squad + ")"}}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+    </form>
+    </mat-grid-tile>
+</mat-grid-list>
+<mat-grid-list cols="1" rowHeight="200px">
+  <mat-grid-tile *ngFor="let p of pastPlayers.slice().reverse()">
+    <div>
+      <app-player *ngIf="isStarted" [playerToGuess]="playerToGuess" [selectedPlayer]="p"></app-player>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>
