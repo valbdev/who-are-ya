@@ -12,7 +12,7 @@ This project is an attempt to replicate  the footballer guessing game 'Who Are Y
 
 ### Clone this repository and go to its root
 ```bash
-git clone <repo> 
+git clone https://github.com/valbdev/who-are-ya.git
 cd who-are-ya/
 ```
 ### Launch app
