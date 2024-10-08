@@ -2,6 +2,8 @@
 
 This project is an attempt to replicate  the footballer guessing game 'Who Are Ya?' (https://playfootball.games/who-are-ya/) for Women's football, while showing how Docker can be a solution for simple client-server architecture implementation.
 
+This app is based on FastAPI for the back-end (with a database made from a static CSV file) and Angular framework for the front-end, served with Nginx.
+
 ![Screenshot of app exemple](.img/screenshot.png)
 
 ## Requirements
